@@ -132,9 +132,31 @@ export const ParallaxHero: React.FC<ParallaxHeroProps> = ({
           className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-15 select-none"
         >
           <div className="relative flex flex-col items-center justify-center select-none pb-4">
-            <span className="text-[12vw] md:text-[9vw] font-brush tracking-wide text-white select-none drop-shadow-[0_10px_20px_rgba(0,0,0,0.65)]">
-              MEGHALAYA
-            </span>
+            {/* TRIS Mountain Logo */}
+            <div className="relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/10 text-white backdrop-blur-md border border-white/20 mb-4 shadow-[0_10px_30px_rgba(0,0,0,0.5)] animate-float-slow overflow-hidden p-2">
+              <img 
+                src="https://static.wixstatic.com/media/ea1287_745329563a6c4e198ea8b8f42e6a377f~mv2.png/v1/crop/x_669,y_335,w_2829,h_3224/fill/w_137,h_157,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_tristravels-02.png"
+                alt="TRIS travels logo"
+                className="w-full h-full object-contain filter invert"
+              />
+            </div>
+
+            {/* MEGHALAYA TRAVELS Title Group */}
+            <div className="text-center flex flex-col items-center">
+              <span className="text-[12vw] md:text-[9vw] font-brush tracking-wide text-white select-none drop-shadow-[0_10px_20px_rgba(0,0,0,0.65)] leading-none">
+                MEGHALAYA
+              </span>
+              <span className="text-[3vw] md:text-[2vw] font-mono tracking-[0.4em] uppercase text-brand-lime select-none drop-shadow-[0_5px_15px_rgba(0,0,0,0.65)] mt-2 font-bold">
+                TRAVELS
+              </span>
+            </div>
+
+            {/* Dynamic Tagline */}
+            {tagline && (
+              <p className="mt-4 text-xs sm:text-sm md:text-base font-sans font-medium text-white/80 tracking-[0.2em] max-w-lg text-center italic drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)] px-4 uppercase">
+                {tagline}
+              </p>
+            )}
           </div>
         </motion.div>
 
