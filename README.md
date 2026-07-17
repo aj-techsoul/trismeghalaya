@@ -1,6 +1,6 @@
 # TRIS: Immersive Meghalaya Travel & Crafts Boutique
 
-### 🔗 Live Demo: <link>trismeghalaya.vercel.app</link>
+### 🔗 Live Demo: trismeghalaya.vercel.app
 
 TRIS is a premium web platform designed to celebrate, plan, and support sustainable travel and indigenous artisan crafts in Meghalaya, India. Built with a focus on immersive aesthetics and high-performance frontend micro-interactions, TRIS transports travelers directly into the "Abode of Clouds."
 
