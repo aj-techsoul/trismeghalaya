@@ -18,12 +18,10 @@ export default function Footer({ onPlanClick, onHomeClick, onShopClick }: Footer
           {/* Column 1: Brand Info */}
           <div className="space-y-4" id="footer-brand-column">
             <div className="flex items-center gap-2 cursor-pointer" onClick={onHomeClick}>
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-olive/20 text-brand-olive overflow-hidden p-1">
-                <img 
-                  src="https://static.wixstatic.com/media/ea1287_745329563a6c4e198ea8b8f42e6a377f~mv2.png/v1/crop/x_669,y_335,w_2829,h_3224/fill/w_137,h_157,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_tristravels-02.png" 
-                  alt="TRIS Travels Logo"
-                  className="w-full h-full object-contain" 
-                />
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-olive/20 text-brand-olive">
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+                </svg>
               </div>
               <div>
                 <span className="font-display font-bold text-xl text-brand-charcoal">TRIS</span>
