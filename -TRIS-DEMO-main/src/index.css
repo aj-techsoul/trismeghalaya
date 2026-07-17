@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Dancing+Script:wght@600&family=Mr+De+Haviland&family=Bebas+Neue&family=Permanent+Marker&family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Dancing+Script:wght@600&family=Mr+De+Haviland&family=Bebas+Neue&family=Permanent+Marker&family=Caveat+Brush&display=swap');
 
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Sora", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --font-cursive: "Mr De Haviland", cursive;
   --font-script: "Dancing Script", cursive;
@@ -122,5 +123,25 @@ html {
 .animate-pollen-2 {
   animation: floatPollen 18s linear infinite;
 }
+
+/* Aspect locked container that mimics object-fit: cover for the sliced landscape layout */
+.aspect-cover-container {
+  position: absolute;
+  left: 50%;
+  top: 50%; /* Center centering for 1.5 aspect ratio full.png */
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 66.52vw; /* 1240 / 1864 */
+  will-change: transform;
+}
+
+@media (max-aspect-ratio: 1864/1240) {
+  .aspect-cover-container {
+    height: 100vh;
+    width: 150.32vh; /* 1864 / 1240 */
+  }
+}
+
+
 
 
